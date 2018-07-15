@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BinaryTree_CreateTree.cs" />
+    <Compile Include="BNode.cs" />
     <Compile Include="IRunner.cs" />
     <Compile Include="LinkedList_AddNodes.cs" />
     <Compile Include="LinkedList_TraverseNodes.cs" />

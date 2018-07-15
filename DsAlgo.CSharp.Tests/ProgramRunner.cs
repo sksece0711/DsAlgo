@@ -6,7 +6,7 @@ using System.Diagnostics;
 namespace DsAlgo.CSharp.Tests
 {
     [TestClass]
-    public class ProgramRunner
+    public class ProgramRunner : Base
     {
 
         [TestMethod]
@@ -23,6 +23,14 @@ namespace DsAlgo.CSharp.Tests
             IRunner<LNode> traverseNodes = new LinkedList_TraverseNodes();
             string res = traverseNodes.Run(new object());
             Debug.WriteLine(res);
+        }
+
+        [TestMethod]
+        public void BinaryTree_CreateTree()
+        {
+            IRunner<BNode> createTree = new BinaryTree_CreateTree();
+            var res = createTree.Run(true);
+            base.DebugThis(() => { Debug.WriteLine("Binary Tree Created"); });
         }
     }
 }
